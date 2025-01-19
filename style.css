@@ -1,0 +1,78 @@
+/* Reset */
+body, h1, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Change Log Section */
+  .changelog {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  .changelog h1 {
+    font-size: 1.8rem;
+    color: #444;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  /* Log Entry */
+  .log-entry {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  .log-entry:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  .date {
+    font-size: 0.9rem;
+    color: #888;
+    margin-right: 15px;
+    flex-shrink: 0;
+    text-align: right;
+    min-width: 80px;
+  }
+  
+  .details h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  .details p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .log-entry {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .date {
+        margin-bottom: 10px;
+        text-align: left;
+    }
+}
